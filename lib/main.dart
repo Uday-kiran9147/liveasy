@@ -1,12 +1,11 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:liveasy/firebase_options.dart';
-import 'package:liveasy/screens/onboarding.dart';
+import 'package:liveasy/screens/onboardig.dart';
+import 'package:liveasy/screens/phone_no.dart';
 
 void main() async {
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
 
@@ -18,8 +17,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'liveasy',
       theme: ThemeData(
-        primarySwatch: Colors.grey,
-      ),
+          primarySwatch: Colors.blue,
+          primaryColor: Colors.white,
+          accentColor: Colors.black,
+          fontFamily: 'Poppins'),
       home: OnboardingScreen(),
     );
   }
