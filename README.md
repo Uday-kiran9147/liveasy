@@ -13,3 +13,4 @@ flutter pub get
 ```
 Start application using 
 ```bash 
+flutter run
