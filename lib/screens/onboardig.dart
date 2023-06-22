@@ -22,6 +22,11 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Spacer(),
+          Container(
+              height: 40, width: 40, child: Image.asset("assets/Vectorp1.png")),
+          SizedBox(
+            height: 30,
+          ),
           Center(
             child: Text(
               "Please select your language",
@@ -84,7 +89,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     );
   }
 }
- 
 
 class CurvePainter extends CustomPainter {
   @override
